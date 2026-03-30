@@ -5,9 +5,21 @@ Feature: Test Cogmento Application
     When user enter username and password
     Then user click on login button
 
-  Scenario: Create new contact in contact page
+ Scenario: Create new contact in contact page
     Given user click on contact link
     And user click on contact create button
     When user enter firstname and last name
     And user enter email and descriptions
     And user click on contact save button
+    
+    
+  Scenario: create a new deal in Deals Page
+    Given user click on new deals link
+    And user click on create button in deals page
+    When user enter deal title
+    And user select deal last date and enter descriptions
+    Then user click on deals save button
+    
+    
+ 
+
